@@ -11,14 +11,46 @@
     <h1>CUSTOM<span>DATE</span>PICKER7</h1>
     
     <div id="dp-1" class="date-picker">
-        <div class="selected-date"></div>
+         <!-- 
+            Selected date populated by JS
+            eg.  <div class="selected-date">06 / 01 / 2022</div>
+        -->
+        <div class="selected-date">06 / 01 / 2022</div>
+        
+        <!-- Month selector and days grid -->
         <div class="dates">
+            
+            <!-- Month selector -->
             <div class="month">
                 <div class="arrows prev-month">&lt;</div>
-                <div class="month-and-year"></div>
+                 <!-- 
+                    Month name populated by JS
+                    eg. <div class="mth">January 2022</div>
+                -->
+                <div class="month-and-year">January 2022</div>
                 <div class="arrows next-month">&gt;</div>
             </div>
-            <div class="days-grid"></div>
+            
+            <!-- Days grid -->
+            <div class="days">
+                <!-- 
+                    note shortcut to add 7 items with class day, .day*7
+                    eg.
+                    <div class="day">1</div>
+                    <div class="day selected">2</div>
+                    but we are going to create this dynamically
+                 -->
+                <div class="day">1</div>
+                <div class="day">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day">5</div>
+                <div class="day selected">6</div>
+                <div class="day">7</div>
+                <div class="day">8</div>
+                <div class="day">9</div>
+                <div class="day">10</div>
+            </div>
         </div>
     </div>
     <script src="scripts.js"></script>
